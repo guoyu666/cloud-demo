@@ -40,8 +40,8 @@ public class UserController {
         return userService.queryById(id);
     }
 
-    /*@Value("${pattern.dateformat}")
-    private String dataFormat;*/
+//    @Value("${pattern.dateformat}")
+//    private String dataFormat;
 
     @GetMapping("/now")
     public String now() {
