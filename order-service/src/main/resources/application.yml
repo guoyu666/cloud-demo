@@ -14,6 +14,7 @@ spring:
       discovery:
         cluster-name: HZ # nacos集群名称
         namespace: 40a3a06a-0f43-41cc-91d6-684d291bcfdb # dev环境
+        ephemeral: false # 设置为非临时实例
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
