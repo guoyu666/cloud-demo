@@ -10,10 +10,10 @@ spring:
     name: order-service # order服务的服务名称
   cloud:
     nacos:
-      server-addr: localhost:80 # nacos注册中心地址
+      server-addr: localhost:8848 # nacos注册中心地址
       discovery:
-        cluster-name: HZ # nacos集群名称
-        namespace: 40a3a06a-0f43-41cc-91d6-684d291bcfdb # dev环境
+        # cluster-name: HZ # nacos集群名称
+        namespace: public # nacos命名空间
         ephemeral: false # 设置为非临时实例
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
